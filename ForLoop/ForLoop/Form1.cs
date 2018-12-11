@@ -16,5 +16,16 @@ namespace ForLoop
         {
             InitializeComponent();
         }
+
+        private void amountRingsComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (amountRingsComboBox.SelectedItem.ToString() == "1")
+            {
+                for (int i = 0; i <= 8; i++)
+                {
+                    i = i + (2 * 1) - 1; 
+                }
+            }
+        }
     }
 }
