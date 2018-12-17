@@ -22,8 +22,10 @@ namespace Machtsverheffing
         private void calculateButton_Click(object sender, EventArgs e)
         {
             ulong displayMoves = ulong.Parse(totalDiscsTextBox.Text.ToString());
-            totalMoves = (ulong)(Math.Pow(2, displayMoves)) - 1;
-            totalMovesLabel.Text = "Total Moves: " + totalMoves.ToString;
+
+            totalMoves = (ulong)(Math.Pow(2, displayMoves)) -1;
+
+            totalMovesLabel.Text = "Total Moves: " + totalMoves.ToString();
         }
     }
 }
