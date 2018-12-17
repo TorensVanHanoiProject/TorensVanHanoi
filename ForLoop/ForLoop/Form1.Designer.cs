@@ -28,70 +28,56 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.amountRingsComboBox = new System.Windows.Forms.ComboBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.amountMovesLabel = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.amountDiscsTextbox = new System.Windows.Forms.TextBox();
+            this.amountStepsLabel = new System.Windows.Forms.Label();
+            this.calculateButton = new System.Windows.Forms.Button();
+            this.inputLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // amountRingsComboBox
+            // amountDiscsTextbox
             // 
-            this.amountRingsComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.amountRingsComboBox.FormattingEnabled = true;
-            this.amountRingsComboBox.Items.AddRange(new object[] {
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7",
-            "8"});
-            this.amountRingsComboBox.Location = new System.Drawing.Point(142, 157);
-            this.amountRingsComboBox.Name = "amountRingsComboBox";
-            this.amountRingsComboBox.Size = new System.Drawing.Size(121, 24);
-            this.amountRingsComboBox.TabIndex = 1;
-            this.amountRingsComboBox.SelectedIndexChanged += new System.EventHandler(this.amountRingsComboBox_SelectedIndexChanged);
+            this.amountDiscsTextbox.Location = new System.Drawing.Point(15, 129);
+            this.amountDiscsTextbox.Name = "amountDiscsTextbox";
+            this.amountDiscsTextbox.Size = new System.Drawing.Size(173, 22);
+            this.amountDiscsTextbox.TabIndex = 0;
             // 
-            // label1
+            // amountStepsLabel
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(3, 157);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(133, 25);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Aantal ringen:";
+            this.amountStepsLabel.AutoSize = true;
+            this.amountStepsLabel.Location = new System.Drawing.Point(12, 25);
+            this.amountStepsLabel.Name = "amountStepsLabel";
+            this.amountStepsLabel.Size = new System.Drawing.Size(96, 17);
+            this.amountStepsLabel.TabIndex = 1;
+            this.amountStepsLabel.Text = "Amount Steps";
             // 
-            // amountMovesLabel
+            // calculateButton
             // 
-            this.amountMovesLabel.AutoSize = true;
-            this.amountMovesLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.amountMovesLabel.Location = new System.Drawing.Point(278, 157);
-            this.amountMovesLabel.Name = "amountMovesLabel";
-            this.amountMovesLabel.Size = new System.Drawing.Size(132, 25);
-            this.amountMovesLabel.TabIndex = 3;
-            this.amountMovesLabel.Text = "Aantal zetten:";
+            this.calculateButton.Location = new System.Drawing.Point(48, 166);
+            this.calculateButton.Name = "calculateButton";
+            this.calculateButton.Size = new System.Drawing.Size(88, 23);
+            this.calculateButton.TabIndex = 2;
+            this.calculateButton.Text = "Calculate";
+            this.calculateButton.UseVisualStyleBackColor = true;
+            this.calculateButton.Click += new System.EventHandler(this.calculateButton_Click);
             // 
-            // label2
+            // inputLabel
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(402, 157);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(23, 25);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "0";
+            this.inputLabel.AutoSize = true;
+            this.inputLabel.Location = new System.Drawing.Point(12, 95);
+            this.inputLabel.Name = "inputLabel";
+            this.inputLabel.Size = new System.Drawing.Size(166, 17);
+            this.inputLabel.TabIndex = 3;
+            this.inputLabel.Text = "Input the amount of discs";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.amountMovesLabel);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.amountRingsComboBox);
+            this.ClientSize = new System.Drawing.Size(333, 450);
+            this.Controls.Add(this.inputLabel);
+            this.Controls.Add(this.calculateButton);
+            this.Controls.Add(this.amountStepsLabel);
+            this.Controls.Add(this.amountDiscsTextbox);
             this.Name = "Form1";
             this.Text = "ForLoop";
             this.ResumeLayout(false);
@@ -101,10 +87,10 @@
 
         #endregion
 
-        private System.Windows.Forms.ComboBox amountRingsComboBox;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label amountMovesLabel;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox amountDiscsTextbox;
+        private System.Windows.Forms.Label amountStepsLabel;
+        private System.Windows.Forms.Button calculateButton;
+        private System.Windows.Forms.Label inputLabel;
     }
 }
 
