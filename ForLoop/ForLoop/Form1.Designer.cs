@@ -93,7 +93,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.amountRingsComboBox);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "ForLoop";
             this.ResumeLayout(false);
             this.PerformLayout();
 
