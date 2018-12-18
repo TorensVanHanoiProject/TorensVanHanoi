@@ -10,11 +10,11 @@ using System.Windows.Forms;
 
 namespace Machtsverheffing
 {
-    public partial class Form1 : Form
+    public partial class MachtsVerheffen : Form
     {
         ulong totalMoves;
 
-        public Form1()
+        public MachtsVerheffen()
         {
             InitializeComponent();
         }
@@ -23,7 +23,7 @@ namespace Machtsverheffing
         {
             ulong displayMoves = ulong.Parse(totalDiscsTextBox.Text.ToString());
 
-            totalMoves = (ulong)(Math.Pow(2, displayMoves)) -1;
+            totalMoves = (ulong)(Math.Pow(2, displayMoves)) - 1;
 
             totalMovesLabel.Text = "Total Moves: " + totalMoves.ToString();
         }
