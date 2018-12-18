@@ -52,6 +52,7 @@
             this.forLoopButton.TabIndex = 4;
             this.forLoopButton.Text = "ForLoop";
             this.forLoopButton.UseVisualStyleBackColor = true;
+            this.forLoopButton.Click += new System.EventHandler(this.forLoopButton_Click);
             // 
             // pictureBox1
             // 
@@ -70,6 +71,7 @@
             this.machtsVerheffenButton.TabIndex = 6;
             this.machtsVerheffenButton.Text = "Machtsverheffen";
             this.machtsVerheffenButton.UseVisualStyleBackColor = true;
+            this.machtsVerheffenButton.Click += new System.EventHandler(this.machtsVerheffenButton_Click);
             // 
             // TowerOfHanoi
             // 

@@ -18,15 +18,16 @@ namespace Machtsverheffing
         {
             InitializeComponent();
         }
-
-        private void calculateButton_Click(object sender, EventArgs e)
-        {
-          
-        }
-
-        private void machtsVerheffingButton_Click(object sender, EventArgs e)
+     
+        private void machtsVerheffenButton_Click(object sender, EventArgs e)
         {
             MachtsVerheffen popup = new MachtsVerheffen();
+            popup.ShowDialog();
+        }
+
+        private void forLoopButton_Click(object sender, EventArgs e)
+        {
+            ForLoop popup = new ForLoop();
             popup.ShowDialog();
         }
     }

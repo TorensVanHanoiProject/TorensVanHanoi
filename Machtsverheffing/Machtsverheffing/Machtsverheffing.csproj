@@ -46,11 +46,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ForLoop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ForLoop.Designer.cs">
+      <DependentUpon>ForLoop.cs</DependentUpon>
+    </Compile>
     <Compile Include="MachtsVerheffen.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="MachtsVerheffen.Designer.cs">
       <DependentUpon>MachtsVerheffen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Recursive.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Recursive.Designer.cs">
+      <DependentUpon>Recursive.cs</DependentUpon>
     </Compile>
     <Compile Include="TowerOfHanoi.cs">
       <SubType>Form</SubType>
@@ -60,6 +72,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="ForLoop.resx">
+      <DependentUpon>ForLoop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Recursive.resx">
+      <DependentUpon>Recursive.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="TowerOfHanoi.resx">
       <DependentUpon>TowerOfHanoi.cs</DependentUpon>
     </EmbeddedResource>
