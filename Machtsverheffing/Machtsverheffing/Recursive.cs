@@ -16,5 +16,10 @@ namespace Machtsverheffing
         {
             InitializeComponent();
         }
+
+        private void calculateButton_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

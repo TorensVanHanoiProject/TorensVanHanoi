@@ -37,18 +37,19 @@
             // 
             // recursiveButton
             // 
-            this.recursiveButton.Location = new System.Drawing.Point(319, 12);
+            this.recursiveButton.Location = new System.Drawing.Point(393, 12);
             this.recursiveButton.Name = "recursiveButton";
-            this.recursiveButton.Size = new System.Drawing.Size(123, 114);
+            this.recursiveButton.Size = new System.Drawing.Size(152, 114);
             this.recursiveButton.TabIndex = 3;
             this.recursiveButton.Text = "Recursive";
             this.recursiveButton.UseVisualStyleBackColor = true;
+            this.recursiveButton.Click += new System.EventHandler(this.recursiveButton_Click);
             // 
             // forLoopButton
             // 
-            this.forLoopButton.Location = new System.Drawing.Point(12, 12);
+            this.forLoopButton.Location = new System.Drawing.Point(32, 12);
             this.forLoopButton.Name = "forLoopButton";
-            this.forLoopButton.Size = new System.Drawing.Size(134, 114);
+            this.forLoopButton.Size = new System.Drawing.Size(157, 114);
             this.forLoopButton.TabIndex = 4;
             this.forLoopButton.Text = "ForLoop";
             this.forLoopButton.UseVisualStyleBackColor = true;
@@ -65,9 +66,9 @@
             // 
             // machtsVerheffenButton
             // 
-            this.machtsVerheffenButton.Location = new System.Drawing.Point(175, 12);
+            this.machtsVerheffenButton.Location = new System.Drawing.Point(214, 12);
             this.machtsVerheffenButton.Name = "machtsVerheffenButton";
-            this.machtsVerheffenButton.Size = new System.Drawing.Size(127, 114);
+            this.machtsVerheffenButton.Size = new System.Drawing.Size(153, 114);
             this.machtsVerheffenButton.TabIndex = 6;
             this.machtsVerheffenButton.Text = "Machtsverheffen";
             this.machtsVerheffenButton.UseVisualStyleBackColor = true;
@@ -77,7 +78,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(603, 394);
+            this.BackColor = System.Drawing.Color.Blue;
+            this.ClientSize = new System.Drawing.Size(573, 394);
             this.Controls.Add(this.machtsVerheffenButton);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.forLoopButton);

@@ -22,20 +22,32 @@ namespace Machtsverheffing
 
         private void calculateButton_Click(object sender, EventArgs e)
         {
+            try
+            {
             userInput = amountDiscsTextbox.Text;
             numberOfDiscs = int.Parse(amountDiscsTextbox.Text);
-            if (numberOfDiscs > 1)
-            {
-                ulong moves = 1;
-                int i = int.Parse(userInput);
-
-                for (; i - 1 > 0; i--)
+                if (numberOfDiscs >= 1 && numberOfDiscs <= 64)
                 {
-                    moves = 2 * moves + 1;
-                }
+                    ulong moves = 1;
+                    int i = int.Parse(userInput);
 
-                MessageBox.Show(moves.ToString());
+                    for (; i - 1 > 0; i--)
+                    {
+                        moves = 2 * moves + 1;
+                    }
+
+                    MessageBox.Show(moves.ToString());
+                }
+                else
+                {
+                    MessageBox.Show("Het getal moet tussen de 1 en 64 zijn!");
+                }
             }
+            catch (FormatException)
+            {
+                MessageBox.Show("Je moet wel een nummer invoeren voordat je iets kan uitrekenen!(dus ook geen tekst)");
+            }
+            
         }
     }
 }

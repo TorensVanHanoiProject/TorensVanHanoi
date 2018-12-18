@@ -30,5 +30,11 @@ namespace Machtsverheffing
             ForLoop popup = new ForLoop();
             popup.ShowDialog();
         }
+
+        private void recursiveButton_Click(object sender, EventArgs e)
+        {
+            Recursive popup = new Recursive();
+            popup.ShowDialog();
+        }
     }
 }

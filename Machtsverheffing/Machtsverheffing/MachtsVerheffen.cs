@@ -13,6 +13,7 @@ namespace Machtsverheffing
     public partial class MachtsVerheffen : Form
     {
         ulong totalMoves;
+        int numberOfDiscs = 0;
 
         public MachtsVerheffen()
         {
@@ -21,11 +22,28 @@ namespace Machtsverheffing
 
         private void calculateButton_Click(object sender, EventArgs e)
         {
-            ulong displayMoves = ulong.Parse(totalDiscsTextBox.Text.ToString());
+            try
+            {
+                ulong displayMoves = ulong.Parse(totalDiscsTextBox.Text.ToString());
+                if (displayMoves >= 1 && displayMoves <= 64)
+                {
+                
+                totalMoves = (ulong)(Math.Pow(2, displayMoves)) - 1;
 
-            totalMoves = (ulong)(Math.Pow(2, displayMoves)) - 1;
+                 totalMovesLabel.Text = "Total Moves: " + totalMoves.ToString();
+                }
+                else
+                {
+                    MessageBox.Show("Het getal moet tussen de 1 en 64 zijn!");
+                }
+                   
 
-            totalMovesLabel.Text = "Total Moves: " + totalMoves.ToString();
+            }
+            catch(FormatException)
+            {
+                MessageBox.Show("Je moet wel een nummer invoeren voordat je iets kan uitrekenen!(dus ook geen tekst)");
+            }
+            
         }
     }
 }

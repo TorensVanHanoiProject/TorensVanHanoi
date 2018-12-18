@@ -69,16 +69,17 @@
             this.totalMovesLabel.TabIndex = 6;
             this.totalMovesLabel.Text = "Total Moves";
             // 
-            // TowerOfHanoi
+            // MachtsVerheffen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.ClientSize = new System.Drawing.Size(278, 209);
             this.Controls.Add(this.totalMovesLabel);
             this.Controls.Add(this.discAmountLabel);
             this.Controls.Add(this.totalDiscsTextBox);
             this.Controls.Add(this.calculateButton);
-            this.Name = "TowerOfHanoi";
+            this.Name = "MachtsVerheffen";
             this.Text = "TowerOfHanoi";
             this.ResumeLayout(false);
             this.PerformLayout();
