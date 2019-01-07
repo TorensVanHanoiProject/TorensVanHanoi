@@ -12,6 +12,13 @@ namespace Machtsverheffing
 {
     public partial class Recursive : Form
     {
+        ulong totalSeconds = 0;
+        ulong totalMinutes = 0;
+        ulong totalHours = 0;
+        ulong totalDays = 0;
+        ulong totalYears = 0;
+        ulong totalCenturies = 0;
+
         public Recursive()
         {
             InitializeComponent();
@@ -22,4 +29,5 @@ namespace Machtsverheffing
 
         }
     }
+
 }
