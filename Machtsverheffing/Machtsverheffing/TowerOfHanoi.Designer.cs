@@ -30,8 +30,8 @@
         {
             this.recursiveButton = new System.Windows.Forms.Button();
             this.forLoopButton = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.machtsVerheffenButton = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -55,15 +55,6 @@
             this.forLoopButton.UseVisualStyleBackColor = true;
             this.forLoopButton.Click += new System.EventHandler(this.forLoopButton_Click);
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Machtsverheffing.Properties.Resources.TowersOfHanoi_1000;
-            this.pictureBox1.Location = new System.Drawing.Point(32, 176);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(572, 174);
-            this.pictureBox1.TabIndex = 5;
-            this.pictureBox1.TabStop = false;
-            // 
             // machtsVerheffenButton
             // 
             this.machtsVerheffenButton.Location = new System.Drawing.Point(214, 12);
@@ -74,11 +65,20 @@
             this.machtsVerheffenButton.UseVisualStyleBackColor = true;
             this.machtsVerheffenButton.Click += new System.EventHandler(this.machtsVerheffenButton_Click);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Machtsverheffing.Properties.Resources.TowersOfHanoi_1000;
+            this.pictureBox1.Location = new System.Drawing.Point(3, 173);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(572, 174);
+            this.pictureBox1.TabIndex = 5;
+            this.pictureBox1.TabStop = false;
+            // 
             // TowerOfHanoi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Blue;
+            this.BackColor = System.Drawing.Color.SlateGray;
             this.ClientSize = new System.Drawing.Size(573, 394);
             this.Controls.Add(this.machtsVerheffenButton);
             this.Controls.Add(this.pictureBox1);

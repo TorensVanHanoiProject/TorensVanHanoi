@@ -36,5 +36,10 @@ namespace Machtsverheffing
             Recursive popup = new Recursive();
             popup.ShowDialog();
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

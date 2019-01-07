@@ -26,6 +26,7 @@ namespace ForLoop
 
         private void calculateButton_Click(object sender, EventArgs e)
         {
+
             userInput = amountDiscsTextbox.Text;
             numberOfDiscs = int.Parse(amountDiscsTextbox.Text);
             if(numberOfDiscs > 1)
