@@ -42,7 +42,7 @@ namespace Machtsverheffing
                 numberOfDiscs = int.Parse(amountDiscsTextbox.Text);
                 if (numberOfDiscs >= 1 && numberOfDiscs <= 64)
                 {
-                   
+                    moves = 1;
                     int i = int.Parse(userInput);
 
                     for (; i - 1 > 0; i--)
